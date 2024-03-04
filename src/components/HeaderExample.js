@@ -5,6 +5,7 @@ import AltButton from './AltButton';
 import StarIcon from './StarIcon';
 import HeaderBgIcon from './HeaderBgIcon';
 import './HeaderExample.css'
+import './ButtonStyles'
 function Header() {
   return (
     <header className='flex justify-between items-center bg-lilac'>

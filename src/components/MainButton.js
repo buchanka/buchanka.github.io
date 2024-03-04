@@ -1,6 +1,7 @@
+import './ButtonStyles.css'
 function MainButton({text, clickAction}) {
   return(
-    <button onClick={clickAction}>{text}</button>
+    <button className="mainButton" onClick={clickAction}>{text}</button>
   )
 }
 
