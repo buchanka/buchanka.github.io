@@ -1,15 +1,15 @@
 import React from 'react';
 import './FirstBlock.css';
 import MyButtons from './MyButtons';
+import HeaderBgIcon from './HeaderBgIcon';
 
 
 function FirstBlock(){
     return(
     <div>
-        <first-block className="first-block">
-            <first-block className="bg-img">
-            {/* <img src='src/rectangle4204-pkoj.svg' alt='back-img' className="bg-img"></img> */}
-            </first-block>
+        <div className='headerBg'>
+          <HeaderBgIcon className="headerBg"/>
+    </div>
     <div className="introduction">
         <article className="text-content">
             <h2>Теперь практиковать язык намного легче!</h2>
@@ -25,7 +25,7 @@ function FirstBlock(){
         </block1-img>
     </div>
         <MyButtons text="Начать"></MyButtons>
-      </first-block>
+      
     </div>   
     )
 }
