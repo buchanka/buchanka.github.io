@@ -46,16 +46,16 @@
   }
 
   .img-1 {
-  position: absolute;
-  left: 1000px;
-  top: 310px;
-  width: 761px;
-  height: 497px;
-  border-radius: 272.5px;
-  /* background-image: url('/src/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png'); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    position: absolute;
+    left: 1000px;
+    top: 310px;
+    width: 761px;
+    height: 497px;
+    border-radius: 272.5px;
+    background-image: url('../assets/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   

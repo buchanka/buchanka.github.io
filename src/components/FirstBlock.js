@@ -2,6 +2,7 @@ import React from 'react';
 import './FirstBlock.css';
 import MyButtons from './MyButtons';
 import HeaderBgIcon from './HeaderBgIcon';
+import block1img from '../assets/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png';
 
 
 function FirstBlock(){
@@ -20,8 +21,7 @@ function FirstBlock(){
             </p>
         </article>
         <block1-img className="img-1">
-            {/* <img
-              src="/src/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png"alt="img-first-block" className="img-1"></img> */}
+             <img src={block1img} alt="block1-img" className="img-1"></img>
         </block1-img>
     </div>
         <MyButtons text="Начать"></MyButtons>

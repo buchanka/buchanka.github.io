@@ -8,12 +8,11 @@ import './HeaderExample.css'
 function Header() {
   return (
     <header className='flex justify-between items-center bg-lilac'>
-        <div className='headerBg'>
-          <HeaderBgIcon className="headerBg"/>
+        <div className='headerBgIcon'>
+          <HeaderBgIcon className="headerBgIcon"/>
         </div>
       <div className='iconStar'>
         <StarIcon></StarIcon>
-        {/*<img src={logo} alt='Logo' title='Logo' />*/}
       </div>
       <div className='langlink-logo'>langlink</div>
       <nav className='flex gap-4'>
