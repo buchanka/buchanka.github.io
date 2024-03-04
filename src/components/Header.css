@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    background-color: rgba(0, 0, 0, .2);
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 10vh;
+    padding: 30px 60px;
+  }
+
+  @media (max-width: 991px) {
+    .header {
+      padding: 0 20px;
+    }
+  }
+
+
+  .navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+
+  .language-link, .support-link, .login-button, .signup-button {
+    font-family: Poppins, sans-serif;
+  }
+
+  .navigation-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .login-button, .signup-button {
+    border-radius: 80px;
+    padding: 10px 30px;
+  }
+
+  .login-button {
+    background-color: #fff;
+    color: #6c6c6c;
+  }
+
+  .signup-button {
+    background-color: #760b91;
+    color: #fff;
+  }
