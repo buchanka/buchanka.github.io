@@ -1,7 +1,7 @@
-.AltButton {
+.altButton {
     position: absolute;
-    left: 1406px;
-    top: 70px;
+    left: 1200px;
+    top: 30px;
     width: 160px;
     height: 60px;
     border-radius: 80px;
@@ -11,8 +11,8 @@
 
 .mainButton{
     position: absolute;
-    left: 1589px;
-    top: 70px;
+    left: 1400px;
+    top: 30px;
     width: 286px;
     height: 60px;
     border-radius: 80px;

@@ -1,15 +1,15 @@
 
 import './App.css';
-import Header from './components/HeaderExample';
-
-import FirstBlock from './components/FirstBlock';
+import Header from './layouts/Header';
+import FirstBlock from './layouts/FirstBlock';
 
 function App() {
   return (
     <div>
-    <Header />
-     <FirstBlock/>
+    <Header/>
+    <FirstBlock/>
     </div>
+    
   );
 }
 

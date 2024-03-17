@@ -1,6 +1,6 @@
 function Link({url, text}) {
   return (
-    <a href={url}>{text}</a>
+    <a className="text-darkgrey" href={url}>{text}</a>
   );
 }
 
