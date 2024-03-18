@@ -1,6 +1,5 @@
 import React from 'react';
-import MyButtons from '../components/MyButtons';
-import HeaderBgIcon from '../components/HeaderBgIcon';
+import MainButton from '../components/MainButton';
 import block1img from '../assets/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png';
 
 
@@ -13,29 +12,26 @@ function FirstBlock(){
           </svg>
         </div>
     
-        <article className="text-4xl font-bold text-pinkish_lilac py-16 col">
+        <article className="text-4xl font-bold text-pinkish_lilac block relative inset-x-12 inset-y-28 w-96">
             <h2>Теперь практиковать язык намного легче!</h2>
             </article>
 
-            <block1-img className="w-1/2 bg-cover pt-12 ">
+            <block1-img className="w-1/2 bg-cover pt-12">
              <img src={block1img} alt="block1-img" className="rounded-xl float-right"></img>
             </block1-img>
             
-            <div className="text-xl text-grey flex-col">        
+            <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
             <p>
               Хотите поднять свой уровень знания языка? Пообщаться с его
               носителями? 
             </p>
             </div>
-            <div className="text-xl text-grey ">        
+            <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
             <p>
             Найти новых друзей? Тогда мы, команда langlink, предлагаем вам наш сервис, абсолютно бесплатно!
             </p>
-            </div>
-    
-            
-        <MyButtons text="Начать"></MyButtons>
-      
+            <MainButton className="block relative right-16" text="Начать"></MainButton>
+            </div> 
     </div>   
     )
 }

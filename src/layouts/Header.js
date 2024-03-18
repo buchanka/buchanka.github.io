@@ -5,8 +5,8 @@ import Link from "../components/Link"
 
 function Header() {
   return (
-    <div className="header">
-      <header className='flex justify-between items-center '>
+    <header className="fixed w-full">
+      <div className="container mx-auto md:min-w-3xl sm:min-w-lg h-24 flex justify-between items-center">
         <div className='logo'>
           <img src={logo} />
         </div>
@@ -16,8 +16,8 @@ function Header() {
           <AltButton text="Войти" />
           <MainButton text="Зарегистрироваться" />
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }
   

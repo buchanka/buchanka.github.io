@@ -5,11 +5,12 @@ import FirstBlock from './layouts/FirstBlock';
 
 function App() {
   return (
-    <div>
-    <Header/>
-    <FirstBlock/>
-    </div>
-    
+    <>
+      <Header/>
+      <main className='pt-24'>
+        <FirstBlock/>
+      </main>
+    </>
   );
 }
 
