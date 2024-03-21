@@ -1,6 +1,9 @@
 import React from 'react';
 import MainButton from '../components/MainButton';
-import block1img from '../assets/d37b4a1dfb45f94dc9403189a195a95c12022-i68-800w.png';
+import block1img from '../assets/used/block-1-img.png';
+import companies from '../assets/used/companies.svg';
+import chatImage from '../assets/used/chat-image.svg';
+import stepsTimeline from '../assets/used/steps.svg';
 
 
 function FirstBlock(){
@@ -12,27 +15,40 @@ function FirstBlock(){
           </svg>
         </div>
     
-        <article className="text-4xl font-bold text-pinkish_lilac block relative inset-x-12 inset-y-28 w-96">
-            <h2>Теперь практиковать язык намного легче!</h2>
-            </article>
+          <article className="text-4xl font-bold text-pinkish_lilac block relative inset-x-12 inset-y-28 w-96">
+              <h2>Теперь практиковать язык намного легче!</h2>
+          </article>
 
-            <block1-img className="w-1/2 bg-cover pt-12">
-             <img src={block1img} alt="block1-img" className="rounded-xl float-right"></img>
-            </block1-img>
+              <block1-img className="w-1/2 bg-cover pt-12">
+                <img src={block1img} alt="block1-img" className="rounded-xl float-right"></img>
+              </block1-img>
             
-            <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
-            <p>
-              Хотите поднять свой уровень знания языка? Пообщаться с его
-              носителями? 
-            </p>
-            </div>
-            <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
-            <p>
-            Найти новых друзей? Тогда мы, команда langlink, предлагаем вам наш сервис, абсолютно бесплатно!
-            </p>
-            <MainButton className="block relative right-16" text="Начать"></MainButton>
-            </div> 
-    </div>   
+                <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
+                  <p>
+                  Хотите поднять свой уровень знания языка? Пообщаться с его
+                носителями? 
+                  </p>
+                </div>
+
+                  <div className="text-xl text-grey block relative inset-x-12 inset-y-40 w-96">        
+                    <p>
+                    Найти новых друзей? Тогда мы, команда langlink, предлагаем вам наш сервис, абсолютно бесплатно!
+                    </p>
+                    <div className="block relative pt-5 px-60 mr-8">
+                      <MainButton className="" text="Начать"></MainButton>
+                    </div>
+                  </div>
+
+                  
+                  <h3 className="font-semibold text-dusty text-4xl text-center block relative inset-x-80 inset-y-96">Наши партнеры</h3>
+                  <img src={companies} alt="companies" className="block relative py-44 px-14"></img>
+      
+                  <h4 className="text-4xl font-semibold text-plumy text-center block-relative inset-x-80 inset-y-96">Как начать общение?</h4>
+                  <img src={chatImage} alt="chat-image" className="block sticky pt-54 pl-96 mx-16 "></img>
+                  <img src={stepsTimeline} alt="steps" className="block relative mx-55"></img>
+    </div>
+    
+    
     )
 }
 

@@ -5,7 +5,7 @@ import Link from "../components/Link"
 
 function Header() {
   return (
-    <header className="fixed w-full">
+    <header className="fixed w-full bg-lilac">
       <div className="container mx-auto md:min-w-3xl sm:min-w-lg h-24 flex justify-between items-center">
         <div className='logo'>
           <img src={logo} />

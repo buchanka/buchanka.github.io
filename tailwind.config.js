@@ -15,7 +15,10 @@ module.exports = {
         violet: '#760B91',
         grey: '#3F3F3F',
         darkgrey:"#252641",
-        pinkish_lilac:"#A203CA"
+        dusty:"#696984",
+        pinkish_lilac:"#A203CA",
+        plumy:'#5D0873',
+        lilac:'#F5E0FE'
 
       },
     },
