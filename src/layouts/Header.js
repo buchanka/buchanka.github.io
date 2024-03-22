@@ -8,7 +8,7 @@ function Header() {
     <header className="fixed w-full bg-lilac">
       <div className="container mx-auto md:min-w-3xl sm:min-w-lg h-24 flex justify-between items-center">
         <div className='logo'>
-          <img src={logo} />
+          <img src={logo} alt=""/>
         </div>
           
         <nav className='flex gap-4 items-center'>
