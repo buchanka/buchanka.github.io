@@ -36,25 +36,14 @@ const SignUp = () => {
     const { username, email, password, surname } = formData;
     const newErrors = {};
 
-    if (username.trim() === '') {
-      newErrors.username = 'Это обязательное поле';
+    for (const field in formData) {
+      if (formData[field].trim() === '') { 
+        newErrors[field] = 'Это обязательное поле';
+      } else if (field === 'password' && formData[field].trim().length < 8) {
+        newErrors.password = 'Пароль должен содержать как минимум 8 символов';
+      }
     }
-
-    if (email.trim() === '') {
-      newErrors.email = 'Это обязательное поле';
-    } else if (!validateEmail(email)) {
-      newErrors.email = 'Введите верный email';
-    }
-
-    if (password.trim() === '') {
-      newErrors.password = 'Это обязательное поле';
-    } else if (password.length < 8) {
-      newErrors.password = 'Пароль должен содержать как минимум 8 символов';
-    }
-
-    if (surname.trim() === '') {
-      newErrors.surname = 'Это обязательное поле';
-    }
+    
 
     setFormErrors(newErrors);
   };

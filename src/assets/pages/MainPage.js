@@ -1,6 +1,7 @@
+import FirstBlock from "../../layouts/FirstBlock";
 function MainPage(){
     return(
-        <h1>MainPage</h1>
+        <FirstBlock/>
     )
 }
 
