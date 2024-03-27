@@ -22,7 +22,8 @@ module.exports = {
         dusty:"#696984",
         pinkish_lilac:"#A203CA",
         plumy:'#5D0873',
-        lilac:'#F5E0FE'
+        lilac:'#F5E0FE',
+        black:'#0C0B0B',
 
       },
     },

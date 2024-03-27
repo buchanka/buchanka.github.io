@@ -7,8 +7,10 @@ import google from '../assets/used/google.svg';
 import grab from '../assets/used/grab-logo.svg';
 import netflix from '../assets/used/netflix.svg';
 import amazon from '../assets/used/amazon.svg';
-import stepsTimeline from '../assets/used/steps.svg';
 import aboutUs from "../assets/used/about-us.jpg";
+import glassedBg from "../assets/used/glass-bg.webp";
+import step2 from "../assets/used/step-2.webp"
+import step3 from "../assets/used/message.webp"
 
 function FirstBlock(){
     return(
@@ -35,25 +37,53 @@ function FirstBlock(){
               Найти новых друзей? Тогда мы, команда langlink, предлагаем вам наш сервис, абсолютно бесплатно!
             </p>
           </div>
-          <div className="self-center lg:self-end">
+          <div className="self-center m-16 lg:self-end">
             <MainButton className="text-lg" text="Начать"></MainButton>
           </div>
         </article>
 
-        <div>
-          <img src={block1img} alt="block1" className="rounded-xl" />
+        <div className='relative'>
+          <img src={block1img} alt="block1" className="rounded-xl absolute top-0 left-0 z-10"></img>
+          <img src={glassedBg} alt="bgOfblock1" className="relative z-1"></img>
         </div>
       </section>
 
       
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center m-16">
         <h3 className="font-semibold text-dusty text-4xl">Наши партнеры</h3>
-        <img src={google} alt="google" className="block relative py-44 px-14"></img>
+      </div>
+        
+      <div className="flex flex-col items-center justify-center gap-24 lg:flex-row">
+        <img src={google} alt="google" className=""></img>
+        <img src={airbnb} alt="airbnb" className=""></img>
+        <img src={facebook} alt="facebook" className=""></img>
+        <img src={grab} alt="grab" className=""></img>
+        <img src={netflix} alt="netflix" className=""></img>
+        <img src={amazon} alt="amazon" className=""></img>
       </div>
 
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center m-24'>
         <h4 className="text-4xl font-semibold text-plumy">Как начать общение?</h4>
-        <img src={stepsTimeline} alt="steps" className="block relative mx-32 my-32"></img>
+      </div>
+
+      <div className='flex flex-wrap items-center items-stretch gap-32 '>
+        <div>
+        <h5 className='text-2xl font-semibold text-black'>Шаг первый</h5>
+        <p className='text-2xl text-plumy'>Зарегистрируйтесь на сайте</p>
+        <MainButton text="Зарегистрироваться" />
+        </div>
+        
+        <div>
+        <h5 className='text-2xl font-semibold text-black'>Шаг второй</h5>
+        <p className='text-2xl text-plumy'>Войдите в профиль</p>
+        <img src={step2} alt="step2" className=''></img>
+        </div>
+
+        <div>
+        <h5 className='text-2xl font-semibold text-black'>Шаг третий</h5>
+        <p className='text-2xl text-plumy'>Найдите собеседника в сообществе и напишите сообщение</p>
+        <img src={step3} alt='step3' className=''></img>
+        </div>
       </div>
     
     <div className='flex flex-col items-center'>
