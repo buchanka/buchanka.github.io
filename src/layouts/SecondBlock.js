@@ -9,11 +9,11 @@ import amazon from '../assets/used/amazon.svg';
 function SecondBlock(){
     return(
     <>
-        <div className="flex flex-col items-center m-16">
+        <div className="flex flex-col items-center m-48">
         <h3 className="font-semibold text-dusty text-4xl">Наши партнеры</h3>
       </div>
         
-      <div className="flex flex-col items-center justify-center gap-24 lg:flex-row">
+      <div className="flex flex-col items-center justify-center m-28 p-8 gap-24 lg:flex-row">
         <img src={google} alt="google" className=""></img>
         <img src={airbnb} alt="airbnb" className=""></img>
         <img src={facebook} alt="facebook" className=""></img>

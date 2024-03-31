@@ -53,7 +53,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="container">
+    <div className="w-full h-full bg-lilac p-8">
       <form onSubmit={handleSubmit} id="form">
         <h1 className='pb-5'>Регистрация на langlink</h1>
         <div className={`input-group ${formErrors.email ? 'error' : ''}`}>

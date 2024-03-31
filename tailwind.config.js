@@ -13,6 +13,9 @@ module.exports = {
       height: {
         // 128: '32rem',
         160: '38rem',
+        280: '54rem',
+        396: '64rem',
+        500: '96rem'
       },
       colors:{
         white:'#FFFFFF',
@@ -24,6 +27,8 @@ module.exports = {
         plumy:'#5D0873',
         lilac:'#F5E0FE',
         black:'#0C0B0B',
+        lightviolet:'#E7C4F6',
+        indigo:'#52006F',
 
       },
     },

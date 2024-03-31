@@ -54,7 +54,8 @@ const SignIn = () => {
   };
 
   return (
-    <div className="container">
+    <div className='w-full h-full bg-lilac p-8'>
+    <div className="container mx-auto p-20">
       <form onSubmit={handleSubmit} id="form">
         <h1 className='pb-5'>Войти</h1>
         <div className={`input-group ${formErrors.email ? 'error' : ''}`}>
@@ -72,6 +73,7 @@ const SignIn = () => {
         <ButtonForForms text="Войти"></ButtonForForms>
        
       </form>
+    </div>
     </div>
   );
 };

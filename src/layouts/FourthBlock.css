@@ -1,14 +1,22 @@
 .container {
     display: flex;
+    flex-wrap: wrap;
+    
   }
   
   .column {
     flex: 1;
-    justify-content:space-around;
-    flex-wrap: wrap;
     padding: 20px;
     border: 3px solid #5D0873;
-    border-radius: 50px;
+    border-radius: 60px;
     margin: 10px;
     text-align: center;
   }
+
+  @media(min-width){
+
+  }
+
+
+
+  

@@ -3,14 +3,19 @@ import MainButton from '../components/MainButton';
 import block1img from '../assets/used/block-1-img.png';
 import glassedBg from "../assets/used/glass-bg.webp";
 
+
 function FirstBlock(){
     return(
     <>
       <div className='absolute w-full -z-10'>
-          <svg className='h-160 w-full' preserveAspectRatio='none' viewBox='0 0 1920 1118' fill='none' xmlns='http://www.w3.org/2000/svg' >
+          <svg className='h-280 w-full md:h-396 w-full sm: h-160 w-full ' preserveAspectRatio='none' viewBox='0 0 1920 1118' fill='none' xmlns='http://www.w3.org/2000/svg' >
             <path d='M0 0H1920V990C1920 990 1618 1118 960 1118C302 1118 0 990 0 990V0Z' fill='#F5E0FE' />
           </svg>
       </div>
+
+
+
+    
       <section className='flex gap-5 justify-around items-center p-24 flex-col-reverse
         lg:flex-row'>
 
@@ -28,15 +33,16 @@ function FirstBlock(){
               Найти новых друзей? Тогда мы, команда langlink, предлагаем вам наш сервис, абсолютно бесплатно!
             </p>
           </div>
-          <div className="self-center m-16 lg:self-end">
+          <div className="self-center m-8 lg:self-end">
             <MainButton className="text-lg" text="Начать"></MainButton>
           </div>
         </article>
 
         <div className='relative'>
-          <img src={block1img} alt="block1" className="rounded-xl absolute top-0 left-0 z-10"></img>
+          <img src={block1img} alt="block1" className="rounded-xl absolute top-0 left-2 right-5 z-10"></img>
           <img src={glassedBg} alt="bgOfblock1" className="relative z-1"></img>
         </div>
+       
       </section>
 
     </>     
