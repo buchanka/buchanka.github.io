@@ -11,6 +11,7 @@ import SignIn from './assets/pages/SignIn';
 import './assets/pages/SignUp+SignIn.css'
 import SignUp from './assets/pages/SignUp';
 import ErrorPage from './assets/pages/ErrorPage';
+import Messages from './assets/pages/Messages';
 //components
 import Layout from './layouts/Layouts'
 
@@ -34,6 +35,12 @@ const router = createBrowserRouter([
   path: '/signup',
   element: <Layout><SignUp/></Layout>,
 },
+
+{
+path: '/messages',
+element: <Layout><Messages/></Layout>
+},
+
 ]);
 
  
