@@ -1,16 +1,16 @@
+import Send from '../assets/used/send.webp'
 
-
-const MessageInput = () => {
+function MessageInput() {
 return (
- 		<form className='px-4 my-3'>
+ 		<form className='px-8 my-10'>
 			<div className='w-full'>
  				<input
  					type='text'
- 					className='border text-sm rounded-lg block w-full p-2.5  bg-gray-700 border-gray-600 text-white'
- 					placeholder='Send a message'
+ 					className='border text-sm rounded-2xl block w-full p-3  bg-paleblue text-manatee'
+ 					placeholder='Отправить сообщение'
  				/>
- 				<button type='submit' className='absolute inset-y-0 end-0 flex items-center pe-3'>
- 					
+ 				<button type='submit' className='absolute flex '>
+					<img className="max-w-8" src={Send} alt=''></img>
  				</button>
  			</div>
  		</form>

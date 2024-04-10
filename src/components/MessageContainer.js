@@ -1,18 +1,22 @@
 import MessageInput from "./MessageInput";
 import Messages from "./Messages";
+import Sidebar from '../sidebar/Sidebar'
 
-const MessageContainer = () => {
+function MessageContainer(){
 return (
 <div className='md:min-w-[450px] flex flex-col'>
-<>
-
-    <div className='bg-slate-500 px-4 py-2 mb-2'>
-        <span className='label-text'>To:</span> <span className='text-gray-900 font-bold'>buchanka</span>
-        </div>
-		    <Messages />
+	<div className="flex h-screen">
+		<div className="w-1/4 h-full">
+		<Sidebar/>
+		</div>
+		<div className="w-3/4 h-full">
+		<Messages />
+			<div className="absolute bottom-0 left-0 w-full">
 		<MessageInput />
-		</>
+			</div>
+		</div>
 	</div>
+</div>
  	);
  };
 export default MessageContainer;

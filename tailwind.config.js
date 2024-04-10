@@ -29,6 +29,8 @@ module.exports = {
         black:'#0C0B0B',
         lightviolet:'#E7C4F6',
         indigo:'#52006F',
+        paleblue:'#E9EAF9',
+        manatee: '#83839A',
 
       },
     },
