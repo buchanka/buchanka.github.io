@@ -1,25 +1,45 @@
+import profileIcon from '../assets/used/chat-icon.png';
+import ChatMenu from './ChatMenu';
+import Nav from './Nav';
+import { useState } from 'react';
+
+
+
 function Dialog() {
+	
     return (
     		<>
-     			<div className='flex gap-2 items-center hover:bg-sky-500 rounded p-2 py-1 cursor-pointer'>
+    			
+				
+     			<div className='flex gap-2 items-center hover:bg-paleblue rounded p-2 py-1 cursor-pointer'>
      				<div className='avatar online'>
      					<div className='w-12 rounded-full'>
      						<img
-    							src='https://cdn0.iconfinder.com/data/icons/communication-line-10/24/account_profile_user_contact_person_avatar_placeholder-512.png'
+    							src={profileIcon}
     							alt='user avatar'
     						/>
     					</div>
      				</div>
-    
+
+					
      				<div className='flex flex-col'>
-     					<div className='flex gap-3 justify-between'>
-     						<p className='font-bold text-gray-200'>buchanka</p>
+     					<div className=''>
+     						<p className='flex gap-3 justify-between font-bold text-darkgrey'>Бот</p>
+							<p className='flex pt-1 text-center'>Привет!</p>
+							
      					</div>
      				</div>
+					 <div className=''>
+						<div className='flex justify-center px-3 text-base tracking-wide text-center text-white whitespace-nowrap bg-red-500 rounded-2xl max-w-[40px]'>1</div>
+					</div>
      			</div>
     
-     			<div className='divider my-0 py-0 h-1' />
+     			
      		</>
      	);
      };
      export default Dialog;
+
+
+	 
+	 

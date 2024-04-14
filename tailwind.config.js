@@ -31,6 +31,7 @@ module.exports = {
         indigo:'#52006F',
         paleblue:'#E9EAF9',
         manatee: '#83839A',
+        ashen: '#C4B4B4'
 
       },
     },

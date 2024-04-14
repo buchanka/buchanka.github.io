@@ -4,9 +4,9 @@ import SearchingInput from "./SearchInput";
 
 function Sidebar(){
  	return (
- 		<div className='border-r border-slate-500 p-4 flex flex-col'>
+ 		<div className='flex flex-col '>
  			<SearchingInput />
- 			<div className='divider px-3'></div>
+ 			<div className='border-b'></div>
  			<MyDialogs />
 		</div>
  	);
