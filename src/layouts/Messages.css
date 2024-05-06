@@ -1,0 +1,15 @@
+.message-container
+{
+  z-index: 1;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0px auto 10px; 
+  background-color: #ffffff;
+  height: calc(100vh - 150px);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 10px 7px 13px -3px rgba(82, 16, 127, 0.2);
+}
+
+

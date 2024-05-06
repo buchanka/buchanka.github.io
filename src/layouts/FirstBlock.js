@@ -1,6 +1,5 @@
 import React from 'react';
 import MainButton from '../components/MainButton';
-import block1img from '../assets/used/block-1-img.png';
 import glassedBg from "../assets/used/glass-bg.webp";
 
 
@@ -13,12 +12,9 @@ function FirstBlock(){
           </svg>
       </div>
 
-
-
     
       <section className='flex gap-5 justify-around items-center p-24 flex-col-reverse
         lg:flex-row'>
-
         <article className='w-full flex flex-col gap-5
           lg:w-96'>
           <div className="text-4xl font-bold text-pinkish_lilac block">
@@ -38,11 +34,10 @@ function FirstBlock(){
           </div>
         </article>
 
-        <div className='relative'>
-          <img src={block1img} alt="block1" className="rounded-xl absolute top-0 left-2 right-5 z-10"></img>
-          <img src={glassedBg} alt="bgOfblock1" className="relative z-1"></img>
+        <div className=''>
+          <img src={glassedBg} alt="bgOfblock1" className=""></img>
         </div>
-       
+
       </section>
 
     </>     

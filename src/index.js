@@ -5,15 +5,22 @@ import {
   RouterProvider
 } from "react-router-dom";
 
+//styles
+import './assets/pages/FormsStyles.css'
 import "./index.css";
+//pages
 import MainPage from './assets/pages/MainPage';
 import SignIn from './assets/pages/SignIn';
-import './assets/pages/SignUp+SignIn.css'
 import SignUp from './assets/pages/SignUp';
 import ErrorPage from './assets/pages/ErrorPage';
-import Messages from './assets/pages/Messages';
+import MessagesPage from "./assets/pages/MessagesPage";
+import SupportPage from "./assets/pages/SupportPage";
+import CommunityPage from "./assets/pages/CommunityPage";
+import ProfilePage from "./assets/pages/ProfilePage";
+import SubscribePage from "./assets/pages/SubscribePage";
 //components
-import Layout from './layouts/Layouts'
+import Layout1 from './layouts/Layout1';
+import Layout2 from './layouts/Layout2';
 
 
 
@@ -21,25 +28,45 @@ const router = createBrowserRouter([
 {
   path: '/',
   element: (
-    <Layout>
+    <Layout1>
       <MainPage/>
-    </Layout>
+    </Layout1>
   ),
   errorElement:<ErrorPage/>,
 },
 {
   path:'/signin',
-  element:<Layout><SignIn/></Layout>,
+  element:<Layout1><SignIn/></Layout1>,
 },
 {
   path: '/signup',
-  element: <Layout><SignUp/></Layout>,
+  element: <Layout1><SignUp/></Layout1>,
 },
 
 {
-path: '/messages',
-element: <Layout><Messages/></Layout>
+ path: '/messages',
+ element: <Layout2><MessagesPage/></Layout2>
 },
+
+{
+ path: '/help',
+ element: <Layout1><SupportPage/></Layout1>
+},
+
+{
+  path: '/community',
+  element: <Layout2><CommunityPage/></Layout2>
+ },
+
+ {
+  path: '/profile',
+  element: <Layout2><ProfilePage/></Layout2>
+ },
+
+ {
+  path: '/subscribe',
+  element: <Layout2><SubscribePage/></Layout2>
+ },
 
 ]);
 
@@ -49,7 +76,7 @@ element: <Layout><Messages/></Layout>
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router}>
-    <Layout/>
+    <Layout1/>
     </RouterProvider> 
   
 );

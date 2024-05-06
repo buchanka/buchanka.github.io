@@ -1,0 +1,11 @@
+.partner-img {
+    flex-basis: calc(33.33% - 48px); 
+    margin: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .partner-img {
+      flex-basis: calc(50% - 48px); 
+    }
+  }
+  

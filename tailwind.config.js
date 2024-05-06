@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  plugins: [
+  require("daisyui"), 
+  require('@tailwindcss/line-clamp'),
+],
+  
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -31,7 +36,11 @@ module.exports = {
         indigo:'#52006F',
         paleblue:'#E9EAF9',
         manatee: '#83839A',
-        ashen: '#C4B4B4'
+        ashen: '#C4B4B4',
+        ghost:'#F7F4FA',
+        clod: '#8E6ECD',
+        oceanblue:'#191959',
+        haze: '#F1EDF8',
 
       },
     },
