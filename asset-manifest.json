@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8028e9f6.css",
+    "main.js": "/static/js/main.a960fe10.js",
+    "static/media/signin.jpg": "/static/media/signin.6b1deb49c3447cefc01a.jpg",
+    "static/media/testimony.jpg": "/static/media/testimony.7a476584de75c633f8e7.jpg",
+    "static/media/signup.jpg": "/static/media/signup.2803b657941962340714.jpg",
+    "static/media/about-us.jpg": "/static/media/about-us.12465a0dd896319fc841.jpg",
+    "static/media/glass-bg.webp": "/static/media/glass-bg.3b6a8b7f6b87819d1752.webp",
+    "static/media/woman-avatar3.jpg": "/static/media/woman-avatar3.413eecf40064265dc5d9.jpg",
+    "static/media/support.webp": "/static/media/support.98feaf49da730ca84d8a.webp",
+    "static/media/faq-img.jpg": "/static/media/faq-img.fa0258d8209c4412f53b.jpg",
+    "static/media/boy_avatar.png": "/static/media/boy_avatar.fb773fa2645e199aeeb6.png",
+    "static/media/woman-avatar2.jpg": "/static/media/woman-avatar2.f7c6a5ff43c28e621f35.jpg",
+    "static/media/man-avatar2.jpg": "/static/media/man-avatar2.941ea975bd6947139f3f.jpg",
+    "static/media/supportForm.webp": "/static/media/supportForm.8933bee03f56a9e64866.webp",
+    "static/media/man-avatar.webp": "/static/media/man-avatar.3829a34dc72eede5e036.webp",
+    "static/media/girl-avatar.webp": "/static/media/girl-avatar.61be64e997ac2bf3c9c0.webp",
+    "static/media/woman-avatar.webp": "/static/media/woman-avatar.2323d1de6c43a5fad5e8.webp",
+    "static/media/step-2.webp": "/static/media/step-2.14b7dbe6666b4df69e3d.webp",
+    "static/media/message.webp": "/static/media/message.0887dea175fd03fa77de.webp",
+    "static/media/amazon.svg": "/static/media/amazon.0ac9320e7ce2fbb5ee3468213ae3b531.svg",
+    "static/media/airbnb.svg": "/static/media/airbnb.41e5795a8613497c115910c944409b69.svg",
+    "static/media/grab-logo.svg": "/static/media/grab-logo.117c1cd4a4980371fa5cc54286278d26.svg",
+    "static/media/google.svg": "/static/media/google.4dd611b04577ef545a110a0f7fe6a1e7.svg",
+    "static/media/facebook.svg": "/static/media/facebook.3153de2304313a1ed977307b5673fc9a.svg",
+    "static/media/logo.svg": "/static/media/logo.bca85f2ddaaf7b781bb1cc423e36f41c.svg",
+    "static/media/netflix.svg": "/static/media/netflix.40e9f96a8a8741e212ab3d6a286cfa3c.svg",
+    "static/media/ratingFive.svg": "/static/media/ratingFive.a6dc9c84d18fcd9798179fbbef6cc2f5.svg",
+    "index.html": "/index.html",
+    "static/media/ratingFour.svg": "/static/media/ratingFour.7e6c9259ac44fba5ba14bff950d447b9.svg",
+    "main.8028e9f6.css.map": "/static/css/main.8028e9f6.css.map",
+    "main.a960fe10.js.map": "/static/js/main.a960fe10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8028e9f6.css",
+    "static/js/main.a960fe10.js"
+  ]
+}
