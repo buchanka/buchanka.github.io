@@ -2,8 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
-import man_avatar from '../../assets/used/man-avatar.webp';
-import woman_avatar from '../../assets/used/woman-avatar.webp';
+import man_avatar from '../../assets/used/man_avatar.webp';
+import woman_avatar from '../../assets/used/woman_avatar.webp';
 import { IoSettings } from "react-icons/io5";
 
 

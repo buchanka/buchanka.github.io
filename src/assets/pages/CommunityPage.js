@@ -1,84 +1,89 @@
 import * as React from "react";
+import girl_avatar from '../used/girl_avatar.webp';
+import man_avatar from '../used/man_avatar.webp';
+import woman_avatar from '../used/woman_avatar.webp';
+import lady_avatar from '../used/lady_avatar.webp';
+import grown_man_avatar from '../used/grown_man_avatar.webp';
+import boy_avatar from '../used/boy_avatar.webp';
+import MainButton from '../../components/MainButton';
+import { Link } from "react-router-dom";
+import { BsFilterLeft } from "react-icons/bs";
+
 
 const profiles = [
   {
     name: "Konrad C.",
     age: 28,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/214b2c5112ed64c5a1337e101ca8847d671ae73034c0ef764b95c7d4c75ee2a3?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: man_avatar,
     speaks: "PL",
     learns: "EN",
   },
   {
     name: "Emily H.",
     age: 24,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/8481260288ee5834953ca01dc558a7401dfbde7501f58c98761cdb34d13deae9?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: woman_avatar,
     speaks: "EN", 
     learns: "NO",
   },
   {
     name: "Stefanie M.",
     age: 15,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/b153bbd02ecb9962a567937b633c6dfad97686270763cd137fba0d418b68cc3a?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: girl_avatar,
     speaks: "FR",
     learns: "GE",
   },
   {
     name: "Anna B.",
     age: 46,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/70b8522f5652d5c3f5d9e887db4cbe902c37aba43074bdfb0de4802a21429583?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: lady_avatar,
     speaks: "HUN",
     learns: "IT",
   },
   {
     name: "Alexander O.",
     age: 49,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ce49364676b7cbca7c0a5502f9527973eba539d77a7ef2d0f0d0f4866b8cdd4c?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: grown_man_avatar,
     speaks: "SW",
     learns: "TR",
   },
   {
     name: "Max R.",
     age: 16,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c4e3b4b6aa5cb9c40a0e9874bdd51723df1d8802a8bccf38fa6ce604dec973a9?apiKey=afebe131897d43fbbe157245a960cb21&",
+    image: boy_avatar,
     speaks: "GE",
     learns: "PL",
   },
 ];
 
+
+
+
+
 function ProfileCard({ profile }) {
   return (
-    <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-      <div className="grow px-4 py-7 mt-2 w-full bg-violet-100 border border-solid border-slate-500 rounded-[56px] max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-[42%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-2xl tracking-wide text-center text-white whitespace-nowrap max-md:mt-10">
-              <img
-                loading="lazy"
-                src={profile.image}
-                alt={`Profile picture of ${profile.name}`}
-                className="self-center rounded-full border border-violet-700 border-solid aspect-[0.96] w-[171px]"
-              />
-              <div className="justify-center px-8 py-6 mt-6 bg-fuchsia-800 rounded-2xl max-md:px-5">
-                Профиль
-              </div>
-            </div>
+    <div className="flex flex-col w-full md:w-1/2 lg:w-1/3 p-4 md:p-6 bg-paleblue">
+      <div className="bg-block border border-wreck rounded-lg p-2 md:p-4">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex-shrink-0">
+            <img
+              src={profile.image}
+              alt={`Profile picture of ${profile.name}`}
+              className="w-24 h-24 md:w-32 md:h-32 rounded-full border border-violet-700 object-cover"
+            />
+            <Link to="/profile" className="block mt-2 md:mt-4 text-start">
+              <MainButton text="Профиль" />
+            </Link>
           </div>
-          <div className="flex flex-col ml-5 w-[58%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow mt-3 text-2xl tracking-wide text-center max-md:mt-10">
-              <div className="px-10 pt-6 pb-9 bg-violet-100 text-fuchsia-950 text-opacity-70 max-md:px-5">
-                {profile.name.split(" ")[0]}{" "}
-                <span className="text-fuchsia-950">
-                  {profile.name.split(" ")[1]}
-                </span>{" "}
-                {profile.age}
+          <div className="mt-2 md:mt-0 md:ml-4">
+            <div className="text-lg md:text-xl font-bold text-fuchsia-950">
+              {profile.name} ({profile.age})
+            </div>
+            <div className="mt-1 md:mt-2 text-sm md:text-base text-violet-950">
+              <div className="bg-violet-100 border border-slate-500 rounded-lg p-1 w-[120px] md:p-2">
+                Speaks: {profile.speaks}
               </div>
-              <div className="flex flex-col items-start pr-5 pl-12 mt-12 whitespace-nowrap text-violet-950 max-md:px-5 max-md:mt-10">
-                <div className="justify-center px-10 py-3 bg-violet-100 border border-solid border-slate-500 rounded-[38.625px] max-md:px-5">
-                  Speaks: <br /> {profile.speaks}
-                </div>
-                <div className="px-12 pt-2.5 pb-4 mt-12 bg-violet-100 border border-solid border-slate-500 rounded-[38.625px] max-md:px-5 max-md:mt-10">
-                  Learns: <br /> {profile.learns}
-                </div>
+              <div className="mt-1 md:mt-2 bg-violet-100 border border-slate-500 rounded-lg p-1 w-[120px] md:p-2">
+                Learns: {profile.learns}
               </div>
             </div>
           </div>
@@ -90,23 +95,39 @@ function ProfileCard({ profile }) {
 
 function MyComponent() {
   return (
-    <div className="flex flex-col px-16 pt-9 pb-16 mt-36 w-full bg-violet-50 border border-gray-300 border-solid max-w-[1720px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-      <div className="px-px max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          {profiles.slice(0, 3).map((profile) => (
-            <ProfileCard key={profile.name} profile={profile} />
-          ))}
-        </div>
+    <>
+  <div className="pt-40 pb-20 bg-ghost">
+    
+    <div className='flex flex-row justify-around'>
+      <div className="bg-paleblue rounded-xl h-10 w-46">
+        <label className="input input-bordered flex items-center bg-paleblue active:bg-paleblue hover:bg-lilac rounded-xl h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-5 opacity-70 items-baseline"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+            <input type="text" className="grow bg-paleblue rounded-xl h-10 text-center active:bg-paleblue hover:bg-lilac" placeholder="Search..." />
+        </label>
       </div>
-      <div className="mt-28 max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          {profiles.slice(3).map((profile) => (
-            <ProfileCard key={profile.name} profile={profile} />
-          ))}
-        </div>
+        <button className=" btn rounded-3xl active:bg-paleblue hover:bg-lilac flex flex-row items-center gap-1 text-manatee">Фильтры
+          <BsFilterLeft className="size-10"></BsFilterLeft>
+        </button>
+    </div>
+
+    <div className="flex flex-col w-full max-w-[1720px] md:px-5 gap-4 pt-10">
+      <div className="flex flex-wrap">
+        {profiles.map((profile) => (
+          <ProfileCard key={profile.name} profile={profile} />
+        ))}
       </div>
     </div>
+  </div>
+    </>
   );
 }
 
 export default MyComponent;
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@ import { AiFillMessage } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { RiUserSettingsFill } from "react-icons/ri";
-import './Header2.css'
+
 
 
 function Header2() {
@@ -78,31 +78,31 @@ function Header2() {
       {/*burger nav */}  
       <div className={"lg:hidden fixed right-28 top-16 w-64 h-80 bg-white flex-col justify-center items-center transition-all duration-300 " + (isMenuOpen ? 'flex' : 'hidden')}>
         <div className={`overlay absolute inset-0 bg-white bg-opacity-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`} onClick={toggleMenu}>
-          <ul className="menu p-4">
-            <Link to="/help">
+          <ul className="menu p-4 flex flex-col gap-2">
+            <Link className='self-center' to="/help">
               <RiUserSettingsFill className="size-7"></RiUserSettingsFill>
               <span className="text-darkgrey">Поддержка</span>
             </Link>
             {currentPath !== '/profile' && (
-              <Link to="/profile">
+              <Link className='self-center' to="/profile">
                 <FaUser className="size-7" />
                 <span className="text-darkgrey">Профиль</span>
               </Link>
             )}
             {currentPath !== '/community' && (
-              <Link to="/community">
+              <Link className='self-center' to="/community">
                 <FaUserGroup className="size-7"></FaUserGroup>
                 <span className="text-darkgrey">Сообщество</span>
               </Link>
             )}
             {currentPath !== '/messages' && (
-              <Link to="/messages">
+              <Link className='self-center' to="/messages">
                 <AiFillMessage className="size-7"></AiFillMessage>
                 <span className="text-darkgrey">Сообщения</span>
               </Link>
             )}
 
-            <Link to="/signin">
+            <Link className='self-center' to="/signin">
               <MainButton text="Выйти" />
             </Link>
           </ul>

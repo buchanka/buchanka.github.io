@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./chatList.css";
 import ChatListItems from "./chatListItems";
-import man_avatar from '../../assets/used/man-avatar.webp';
+import man_avatar from '../../assets/used/man_avatar.webp';
 import man_avatar2 from '../../assets/used/man-avatar2.jpg';
-import woman_avatar from '../../assets/used/woman-avatar.webp';
+import woman_avatar from '../../assets/used/woman_avatar.webp';
 import woman_avatar2 from '../../assets/used/woman-avatar2.jpg';
 import woman_avatar3 from '../../assets/used/woman-avatar3.jpg';
-import girl_avatar from '../../assets/used/girl-avatar.webp';
-import boy_avatar from '../../assets/used/boy_avatar.png';
+import girl_avatar from '../../assets/used/girl_avatar.webp';
+import boy_avatar from '../../assets/used/boy_avatar.webp';
 
 const ChatList = () => {
 const allChatUsers = [
@@ -108,7 +108,7 @@ const allChatUsers = [
         </div>
 
          <div className='flex flex-row align-baseline'>
-            <div classname="bg-paleblue rounded-xl h-10 w-46 text-center">
+            <div className="bg-paleblue rounded-xl h-10 w-46 text-center">
                 <label className="input input-bordered flex items-center bg-paleblue active:bg-paleblue hover:bg-lilac rounded-xl h-10">
                     <input type="text" className="grow bg-paleblue rounded-xl h-10 text-center active:bg-paleblue hover:bg-lilac" placeholder="Search..." />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-5 opacity-70 items-baseline"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import aboutUs from "../assets/used/about-us.jpg";
-import manAvatar from '../assets/used/man-avatar.webp';
-import girlAvatar from '../assets/used/girl-avatar.webp';
-import womanAvatar from '../assets/used/woman-avatar.webp';
+import manAvatar from '../assets/used/man_avatar.webp';
+import girlAvatar from '../assets/used/girl_avatar.webp';
+import womanAvatar from '../assets/used/woman_avatar.webp';
 import '../layouts/FourthBlock.css';
 import ratingFour from '../assets/used/ratingFour.svg';
 import ratingFive from '../assets/used/ratingFive.svg';
@@ -27,7 +27,7 @@ function FourthBlock(){
                 <img src={ratingFive} alt='ratingFive' className='items-center justify-self-center self-center content-center w-1/3'></img> 
                 <p className={`text-xl text-center text-black ${expanded ? '' : 'line-clamp-1'}`}>В процессе поиска удобного сервиса для языкового обмена я нашел langlink, с тех пор пользуюсь этим приложением 3 года, всем советую</p>
                 <p onClick={handleExpand} className="font-extralight cursor-pointer">{expanded ? 'свернуть' : 'развернуть'}</p>
-                <img src={manAvatar} alt="manAvatar" className=""></img>
+                <img src={manAvatar} alt="manAvatar" className="size-16"></img>
                 <p className=' flex flex-col font-regular'>Михаил, изучает чешский</p>
             </div>
         
@@ -36,7 +36,7 @@ function FourthBlock(){
                <img src={ratingFour} alt='ratingFour' className='flex items-center justify-self-center self-center content-center w-1/3'></img>
                <p className={`text-xl text-center text-black ${expanded ? '' : 'line-clamp-1'}`}>Возможность изучать языки, общаясь с носителями языка стала возможна для меня с сервисом langlink, надеюсь на дальнейшее развитие приложения! </p>
                <p onClick={handleExpand} className="font-extralight cursor-pointer">{expanded ? 'свернуть' : 'развернуть'}</p>
-               <img src={girlAvatar} alt="girlAvatar" className="flex content-end justify-self-center justify-center self-stretch"></img>
+               <img src={girlAvatar} alt="girlAvatar" className="size-16 flex content-end justify-self-center justify-center self-stretch"></img>
                <p className='flex flex-col font-regular'>Анна, изучает французский</p>
             </div>
 
@@ -44,7 +44,7 @@ function FourthBlock(){
              <img src={ratingFive} alt='ratingFive' className='items-center self-center content-center w-1/3'></img> 
              <p className={`text-xl text-center text-black ${expanded ? '' : 'line-clamp-1'}`}>Удивительно как легко и безопасно общаться с помощью langlink, я уже посоветовала это приложение всем друзьям, кто изучает иностранные языки</p>
              <p onClick={handleExpand} className="font-extralight cursor-pointer">{expanded ? 'свернуть' : 'развернуть'}</p>
-             <img src={womanAvatar} alt="womanAvatar" className=""></img>
+             <img src={womanAvatar} alt="womanAvatar" className="size-16"></img>
              <p className='flex flex-col font-regular'>Марина, изучает корейский</p>
           </div>
       </div>

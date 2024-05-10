@@ -29,7 +29,7 @@ function FAQContent() {
                   {expandedItems[index] ? '- ' : '+ '}
                   {item.question}
                 </p>
-                {expandedItems[index] && <p>{item.answer}</p>}
+                {expandedItems[index] && <p className='text-oceanblue text-xl mt-2'>{item.answer}</p>}
               </div>
             ))}
           </div>

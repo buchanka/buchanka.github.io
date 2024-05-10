@@ -41,7 +41,8 @@ module.exports = {
         clod: '#8E6ECD',
         oceanblue:'#191959',
         haze: '#F1EDF8',
-
+        block:'#F2F3FF',
+        wreck:'#AFB0C5',
       },
     },
   },

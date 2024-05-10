@@ -1,13 +1,14 @@
 import React from 'react';
 import MainButton from '../components/MainButton';
 import glassedBg from "../assets/used/glass-bg.webp";
+import { Link } from 'react-router-dom';
 
 
 function FirstBlock(){
     return(
     <>
       <div className='absolute w-full -z-10'>
-          <svg className='h-280 w-full md:h-396 w-full sm: h-160 w-full ' preserveAspectRatio='none' viewBox='0 0 1920 1118' fill='none' xmlns='http://www.w3.org/2000/svg' >
+          <svg className='h-160 w-[100%] md:h-[60rem] sm:h-[54rem]' preserveAspectRatio='none' viewBox='0 0 1920 1118' fill='none' xmlns='http://www.w3.org/2000/svg' >
             <path d='M0 0H1920V990C1920 990 1618 1118 960 1118C302 1118 0 990 0 990V0Z' fill='#F5E0FE' />
           </svg>
       </div>
@@ -20,7 +21,7 @@ function FirstBlock(){
           <div className="text-4xl font-bold text-pinkish_lilac block">
               <h2>Теперь практиковать язык намного легче!</h2>
           </div>
-          <div className="text-xl text-grey block">        
+          <div className="flex flex-col text-xl text-grey md:text-lg sm:text-base">        
             <p>
               Хотите поднять свой уровень знания языка? Пообщаться с его
             носителями? 
@@ -30,7 +31,9 @@ function FirstBlock(){
             </p>
           </div>
           <div className="self-center m-8 lg:self-end">
+            <Link to ="/signup">
             <MainButton className="text-lg" text="Начать"></MainButton>
+            </Link>
           </div>
         </article>
 

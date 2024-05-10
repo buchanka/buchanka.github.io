@@ -7,11 +7,13 @@ import MainButton from '../components/MainButton';
 function ThirdBlock(){
     return( 
   <section>
-    <div className='m-8 text-center text-bold text-plumy'>
+    <div className='m-8 text-center text-4xl font-semibold text-plumy'>
       <h1 className=''>Как начать общение?</h1>
     </div>
-    <ul className="timeline max-md:timeline-compact timeline-vertical">
-  <li>
+    
+    
+  <ul className="timeline max-md:timeline-compact timeline-vertical">
+    <li>
     
     <div className="flex flex-col timeline-end md:text-start mb-10 ml-8 self-start max-w-64">
       <time className="font-serif italic">Шаг первый</time>

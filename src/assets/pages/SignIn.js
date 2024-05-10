@@ -69,7 +69,9 @@ const SignIn = () => {
                   <input type="password" id="password" name="password" value={formData.password} onChange={handleChange}/>
                   <div className="error">{formErrors.password}</div>
                 </div>
-                <ButtonForForms text="Войти"></ButtonForForms>
+                <Link to="/messages">
+                  <ButtonForForms text="Войти"></ButtonForForms>
+                </Link>
                 <div className="text-sm flex justify-end items-center mt-3 underline">
                   <Link to='/signup' className="underline">Вы еще не зарегистрированы? Зарегистрироваться</Link>
                 </div>
