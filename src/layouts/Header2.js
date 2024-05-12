@@ -11,8 +11,6 @@ import { RiUserSettingsFill } from "react-icons/ri";
 
 
 function Header2() {
-  const location = useLocation();
-  const currentPath = location.pathname;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -44,30 +42,30 @@ function Header2() {
 
   {/*desktop nav */}
         <nav className={`hidden lg:flex gap-6 items-center`}>
-        {currentPath!=='/help'&&(
+        
           <Link to="/help">
             <RiUserSettingsFill className="size-7"></RiUserSettingsFill>
             <span className="text-darkgrey">Поддержка</span>
           </Link>
-        )}
-          {currentPath !== '/profile' && (
+      
+          
             <Link to="/profile">
               <FaUser className="size-7" />
               <span className="text-darkgrey">Профиль</span>
             </Link>
-          )}
-          {currentPath !== '/community' && (
+          
+          
             <Link to="/community">
               <FaUserGroup className="size-7"></FaUserGroup>
               <span className="text-darkgrey">Сообщество</span>
             </Link>
-          )}
-          {currentPath !== '/messages' && (
+          
+          
             <Link to="/messages">
               <AiFillMessage className="size-7"></AiFillMessage>
               <span className="text-darkgrey">Сообщения</span>
             </Link>
-          )}
+          
 
           <Link to="/signin">
             <MainButton text="Выйти" />
@@ -83,24 +81,24 @@ function Header2() {
               <RiUserSettingsFill className="size-7"></RiUserSettingsFill>
               <span className="text-darkgrey">Поддержка</span>
             </Link>
-            {currentPath !== '/profile' && (
+            
               <Link className='self-center' to="/profile">
                 <FaUser className="size-7" />
                 <span className="text-darkgrey">Профиль</span>
               </Link>
-            )}
-            {currentPath !== '/community' && (
+            
+            
               <Link className='self-center' to="/community">
                 <FaUserGroup className="size-7"></FaUserGroup>
                 <span className="text-darkgrey">Сообщество</span>
               </Link>
-            )}
-            {currentPath !== '/messages' && (
+            
+            
               <Link className='self-center' to="/messages">
                 <AiFillMessage className="size-7"></AiFillMessage>
                 <span className="text-darkgrey">Сообщения</span>
               </Link>
-            )}
+           
 
             <Link className='self-center' to="/signin">
               <MainButton text="Выйти" />

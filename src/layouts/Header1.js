@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 import logo from "../assets/used/logo.svg";
 import AltButton from "../components/AltButton";
 import MainButton from "../components/MainButton";
-import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const location = useLocation();
-  const currentPath = location.pathname;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -39,19 +36,19 @@ function Header() {
 
 {/*desktop nav */}
       <nav className={`hidden lg:flex gap-6 items-center`}>
-        {currentPath!=='/help'&&(
+        
         <Link to="/help">Поддержка</Link>
-        )}
+       
 
-          {currentPath!=='/signin'&&(<Link to="/signin">
+          <Link to="/signin">
           <AltButton text="Войти"></AltButton>
           </Link>
-          )}
+          
 
-          {currentPath!=='/signup'&&(<Link to="/signup">
+          <Link to="/signup">
             <MainButton text="Зарегистрироваться"></MainButton>
             </Link>
-          )}
+          
         </nav>
 
 
@@ -61,15 +58,15 @@ function Header() {
             <ul className="menu p-4 flex flex-col gap-4">
             <Link className='self-center' to="/help">Поддержка</Link>
           
-              {currentPath!=='/signin'&&(<Link className='self-center' to="/signin">
+              <Link className='self-center' to="/signin">
               <AltButton text="Войти"></AltButton>
               </Link>
-              )}
+              
 
-              {currentPath!=='/signup'&&(<Link className='self-center' to="/signup">
+              <Link className='self-center' to="/signup">
               <MainButton text="Зарегистрироваться"></MainButton>
               </Link>
-              )}
+              
           </ul>
         </div>
       </div>

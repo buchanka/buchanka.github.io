@@ -12,7 +12,7 @@ function ThirdBlock(){
     </div>
     
     
-  <ul className="timeline max-md:timeline-compact timeline-vertical">
+  <ul className="timeline max-width-[1000px] mt-0 mr-auto max-md:timeline-compact timeline-vertical">
     <li>
     
     <div className="flex flex-col timeline-end md:text-start mb-10 ml-8 self-start max-w-64">

@@ -22,7 +22,7 @@ function FAQContent() {
           <div className="w-[70%] md:h-full my-auto lg:w-[40%]">
             <img src={faqImage} alt="" className="rounded-3xl w-full" />
           </div>
-          <div className="text-2xl font-bold text-indigo leading-[70px] md:text-3xl md:leading-[60px] lg:text-3xl lg:leading-[70px]">
+          <div className="text-2xl font-bold text-indigo leading-[70px] width-100% md:text-3xl md:leading-[60px] lg:text-3xl lg:leading-[70px]">
             {faqItems.map((item, index) => (
               <div key={index}>
                 <p onClick={() => handleExpand(index)} className="cursor-pointer">
